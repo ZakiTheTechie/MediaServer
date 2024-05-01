@@ -1,0 +1,35 @@
+<!--
+// ============================================================================
+// Copyright (C) 2015 Fujitsu Network Communications, Inc. All Rights Reserved
+// ============================================================================
+// Description:
+//  Navigation Menu Bar
+//
+// History:
+//  05/15/2015 - Version 0.9: Initial Development
+-->  
+<nav class="navbar navbar-inverse" ng-controller="mediaCtrl">
+  <div class="container-fluid">
+    <div class="navbar-header">
+      <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#bs-example-navbar-collapse-1">
+        <span class="sr-only">Toggle navigation</span>
+        <span class="icon-bar"></span>
+        <span class="icon-bar"></span>
+        <span class="icon-bar"></span>
+      </button>
+      <a class="navbar-brand" href="#">
+        Fujitsu
+      </a>
+    </div>
+
+    <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
+      <ul class="nav navbar-nav">
+        <li ng-class="{ active: activeNav('main') }"><a ui-sref="main">Video Selection <span class="sr-only">(current)</span></a></li>
+      </ul>
+
+      <ul class="nav navbar-nav navbar-right">
+        <li><a ui-sref="main"><span class="glyphicon glyphicon-home"></span></a></li>
+      </ul>
+    </div>
+  </div>
+</nav>

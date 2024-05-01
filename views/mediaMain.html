@@ -1,1 +1,19 @@
-
+<!--
+// ============================================================================
+// Copyright (C) 2015 Fujitsu Network Communications, Inc. All Rights Reserved
+// ============================================================================
+// Description:
+//  Main Content with Video selection and data
+//
+// History:
+//  05/15/2015 - Version 0.9: Initial Development
+--> 
+<div class="row">
+  <div class="col-md-1">&nbsp;</div>
+  <div class="col-md-2" ng-repeat="movie in movieList">
+    <a href="{{videoUrl}}{{movie.video}}">
+      <img class="movies" src="{{posterUrl}}{{movie.poster}}" />
+    </a>
+    <p style="font:caption; text-align:center"> {{movie.title}} </p>
+  </div>
+</div>
