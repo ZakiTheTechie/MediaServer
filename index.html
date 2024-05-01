@@ -1,0 +1,49 @@
+<!--
+// ============================================================================
+// Copyright (C) 2015 Fujitsu Network Communications, Inc. All Rights Reserved
+// ============================================================================
+// Description:
+//  Core file for Media Server application
+//
+// History:
+//  05/15/2015 - Version 0.9: Initial Development
+-->  
+
+<!DOCTYPE html>
+<html lang="en" ng-app="mediaServer">
+  <head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <!-- The above 3 meta tags *must* come first in the head; any other head content must come *after* these tags -->
+    <meta name="description" content="Landing Page">
+    <meta name="author" content="Melvin Tan">
+
+    <title>Media Server</title>
+
+    <!-- Bootstrap core CSS -->
+    <link rel="stylesheet" href="styles/bootstrap-3.3.4/css/bootstrap.css">
+       
+    <!-- Custom styles for this template -->   
+       
+  </head>
+  <body ng-controller="mediaCtrl">
+    <div class="container">
+      <!-- Navigation Bar -->
+      <div ng-include="'views/mediaNavigation.html'"></div>
+      <!-- Header -->
+      <div>
+        <center><img src="images/demo_top_ban.jpg"></center>
+        <br/><br/>
+      </div>
+        <!-- Main Area -->
+        <div ng-include="'views/mediaMain.html'"></div> 
+    </div>
+    <!-- Open Source Library JScripts -->
+    <script src="js/libs/angular.min.js"></script>
+    <script src="js/libs/ui-bootstrap-tpls-0.13.0.min.js"></script>
+
+    <!-- Local JScript --> 
+    <script src="js/mediaController.js"></script>
+  </body>
+</html>  
