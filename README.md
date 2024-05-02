@@ -1,4 +1,4 @@
-Installs media server and license free content to demonstrate packet flows for demos
+Installs media server and license free content to demonstrate packet flows for demos of networking systems
 
 To install on a working Ubuntu system
 
