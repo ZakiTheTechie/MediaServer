@@ -9,3 +9,6 @@ To install on a working Ubuntu system
      sudo mv index.lighttpd.html /home/labuser/index.lighttpd.html
      sudo git clone https://github.com/phydeaxarf/mediaserver.git .  
           #trailing period above is required to have git install in /var/www/html instead of creating a subdirectory
+
+once installed you should be able to load the media content by pointing a browser to http://IP-of-server
+
